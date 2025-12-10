@@ -1,0 +1,11 @@
+[
+  { "etapa": "fundamental_I", "disciplina": "Arte",                   "arquivo": "fundamental_I/Arte.json" },
+  { "etapa": "fundamental_I", "disciplina": "Ciências",               "arquivo": "fundamental_I/Ciências.json" },
+  { "etapa": "fundamental_I", "disciplina": "Educação Física",        "arquivo": "fundamental_I/Educação_Física.json" },
+  { "etapa": "fundamental_I", "disciplina": "Geografia",              "arquivo": "fundamental_I/Geografia.json" },
+  { "etapa": "fundamental_I", "disciplina": "História",               "arquivo": "fundamental_I/História.json" },
+  { "etapa": "fundamental_I", "disciplina": "Língua Inglesa",         "arquivo": "fundamental_I/Língua_Inglesa.json" },
+  { "etapa": "fundamental_I", "disciplina": "Língua Portuguesa",      "arquivo": "fundamental_I/Língua_Portuguesa.json" },
+  { "etapa": "fundamental_I", "disciplina": "Matemática",             "arquivo": "fundamental_I/Matemática.json" },
+  { "etapa": "fundamental_I", "disciplina": "Projeto de Convivência", "arquivo": "fundamental_I/Projeto_de_Convivência.json" }
+]

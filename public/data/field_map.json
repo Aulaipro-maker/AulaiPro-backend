@@ -1,0 +1,1266 @@
+{  "fundamental_I": {
+    "version": "2025-10-30",
+    "etapa": "fundamental_I",
+    "description": "Cabeçalho geral para normalizar todos os JSONs do Fundamental I (1º ao 5º ano), unificando campos comuns como ciclo, ano/série, bimestre, aula e os campos curriculares BNCC.",
+    "global": {
+      "ciclo": ["Ciclo", "CICLO"],
+      "ano_serie": ["Ano/Série", "Ano\\u002fSérie", "Ano", "Série"],
+      "bimestre": ["Bimestre", "BIMESTRE"],
+      "aula": ["Aula", "AULA"],
+      "disciplina": [
+        "Arte",
+        "Disciplina",
+        "Linguagem",
+        "Ciências",
+        "Ciencias",
+        "Geografia",
+        "História",
+        "Historia",
+        "Educação Física",
+        "Educacao Fisica",
+        "Projeto de Convivência",
+        "Projeto de Convivencia",
+        "Espaço de SER"
+      ],
+      "tema": [
+        "Unidade temática",
+        "Unidade Temática",
+        "Unidades temáticas",
+        "Unidades Temáticas"
+      ],
+      "objeto": [
+        "Objetos de Conhecimento",
+        "Objetos de conhecimento",
+        "Objeto de conhecimento"
+      ],
+      "titulo": ["Título", "Titulos"],
+      "conteudo": ["Conteúdos", "Conteudo", "Conteúdos "],
+      "habilidade": ["Habilidades", "habilidade", "BNCC", "RA", "Ra"],
+      "objetivos": ["Objetivos", "objetivo"],
+      "praticas_linguagem": ["Práticas de linguagem", "Praticas de linguagem"],
+      "campo_atuacao": ["Campo de atuação", "Campo de atuacao"]
+    },
+    "rules": {
+      "normalize_accents": true,
+      "trim_keys": true,
+      "trim_values": true,
+      "accept_null_fields": true,
+      "aliases_with_spaces": true,
+      "split_multiline": {
+        "fields": ["habilidade", "objetivos", "conteudo", "objeto", "tema"],
+        "separators": ["\\n", "\\r\\n"]
+      }
+    },
+    "disciplinas": {
+      "Arte": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["Arte"],
+        "tema": ["Linguagem"],
+        "objeto": ["Objetos de Conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": ["Habilidades"],
+        "objetivos": ["Objetivos"]
+      },
+      "Ciencias": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["Ciências", "Ciencias"],
+        "tema": ["Unidade temática", "Unidade tematica"],
+        "objeto": ["Objetos de conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": ["Habilidades"],
+        "objetivos": ["Objetivos"]
+      },
+      "Educacao Fisica": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["Educação Física", "Educacao Fisica"],
+        "tema": ["Unidade temática", "Unidade tematica"],
+        "objeto": ["Objetos de conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": ["Habilidades"],
+        "objetivos": ["Objetivos"]
+      },
+      "Geografia": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["Geografia"],
+        "tema": ["Unidades temáticas", "Unidade temática"],
+        "objeto": ["Objetos de conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": ["Habilidades"],
+        "objetivos": ["Objetivos"]
+      },
+      "Historia": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["História", "Historia"],
+        "tema": ["Unidade temática", "Unidade tematica"],
+        "objeto": ["Objetos de conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": ["Habilidades"],
+        "objetivos": ["Objetivos"]
+      },
+      "Lingua Inglesa": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["Língua Inglesa", "Inglês", "Ingles"],
+        "tema": ["Unidade temática", "Unidade tematica"],
+        "objeto": ["Objetos de conhecimento", "Objetos de Conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": ["Habilidades"],
+        "objetivos": ["Objetivos"]
+      },
+      "Projeto de Convivencia": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": [
+          "Projeto de Convivência",
+          "Espaço de SER",
+          "Projeto de Convivencia"
+        ],
+        "tema": [],
+        "objeto": ["Objetos de Conhecimento"],
+        "titulo": ["Título"],
+        "conteudo": ["Conteúdos"],
+        "habilidade": [],
+        "objetivos": ["Objetivos"]
+      },
+      "Matematica": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": ["Matemática", "Matematica"],
+        "tema": [
+          "Unidade Temática",
+          "Unidade temática",
+          "Unidade tematica",
+          "Unidades Temáticas",
+          "Unidades temáticas"
+        ],
+        "objeto": [
+          "Objetos de Conhecimento",
+          "Objetos de conhecimento"
+        ],
+        "titulo": ["Título", "Titulos"],
+        "conteudo": ["Conteúdos", "Conteudo", "Conteúdos "],
+        "habilidade": ["Habilidades", "habilidade", "BNCC", "Ra", "RA"],
+        "objetivos": ["Objetivos", "objetivo"]
+      },
+      "Lingua Portuguesa": {
+        "etapa": ["Ciclo"],
+        "serie": ["Ano/Série", "Ano\\u002fSérie"],
+        "bimestre": ["Bimestre"],
+        "aula": ["Aula"],
+        "disciplina": [
+          "Língua Portuguesa",
+          "Lingua Portuguesa",
+          "Português",
+          "Portugues"
+        ],
+        "tema": [
+          "Campo de atuação",
+          "Práticas de linguagem",
+          "Campo de atuacao",
+          "Praticas de linguagem"
+        ],
+        "objeto": [
+          "Objetos de conhecimento",
+          "Objetos de Conhecimento"
+        ],
+        "titulo": ["Título", "Titulos"],
+        "conteudo": ["Conteúdos", "Conteudo", "Conteúdos "],
+        "habilidade": ["Habilidades", "habilidade", "BNCC", "RA"],
+        "objetivos": ["Objetivos", "objetivo"]
+      }
+    }
+  },
+
+
+  "fundamental_II": {
+    "version": "2025-10-30",
+    "etapa": "fundamental_II",
+    "description": "Mapa unificado de campos para todos os JSONs de Fundamental II enviados (Arte, Ciências, Educação Financeira, Educação Física, Geografia, História, Língua Inglesa, Língua Portuguesa, Redação e Leitura, Projeto de Convivência, Projeto de Vida, Robótica/PEI, Tecnologia e Inovação, Tecnologia e Inovação PEI 7h e Matemática).",
+    "global": {
+      "ciclo": ["CICLO", "Ciclo"],
+      "ano_serie": ["ANO/SÉRIE", "Ano/Série", "Série", "Ano"],
+      "bimestre": ["BIMESTRE", "Bimestre", "BIMESTRE "],
+      "semana": ["SEMANA", "Semana"],
+      "data": ["Data", "Período"],
+      "aula": ["AULA", "Aula", "Aula Unidade", "Aula Sala", "Aulas"],
+      "unidade": ["UNIDADE TEMÁTICA", "Unidade", "Unidade de Estudo"],
+      "tema": [
+        "UNIDADE TEMÁTICA",
+        "Unidade Temática",
+        "Unidade",
+        "TEMA",
+        "Tema",
+        "Tópico",
+        "Subtema"
+      ],
+      "objeto": [
+        "OBJETOS DO CONHECIMENTO",
+        "OBJETOS DE CONHECIMENTO",
+        "OBJETO DE CONHECIMENTO",
+        "Objetos de Conhecimento"
+      ],
+      "habilidade": [
+        "HABILIDADE",
+        "HABILIDADE ",
+        "HABILIDADES",
+         "HABILIDADES  ",
+        "Habilidades",
+        "Habilidades ",
+        "Habilidades  ",
+        "HABILIDADES BNCC",
+        "Habilidade - BNCC Computação",
+        "Habilidades BNCC - Computação",
+        "Habilidades BNCC - Matemática",
+        "Habilidades - Diretrizes Curriculares Tecnologia e Inovação"
+      ],
+      "titulo": [
+        "TÍTULO",
+        "TÍTULO ",
+        "TÍTULO  ",
+        "TÍTULO DA AULA",
+        "TÍTULO DA AULA ",
+        "Título",
+        "Título da Aula",
+        "Aula Tema",
+        "TÍTULO PLANO DE AULA SEMANAL"
+      ],
+      "conteudo": [
+        "CONTEÚDO",
+        "CONTEÚDO ",
+        "Conteúdo",
+        "Conteúdos"
+      ],
+      "objetivos": [
+        "OBJETIVOS",
+        "Objetivos",
+        "OBJETIVO",
+        "OBJETIVOS ESPECÍFICOS",
+        "Objetivo de Aprendizagem",
+        "OBJETIVO DE APRENDIZAGEM"
+      ],
+      "praticas_linguagem": [
+        "PRÁTICA DE LINGUAGEM",
+        "PRÁTICAS DE LINGUAGEM"
+      ],
+      "campo_atuacao": ["CAMPO DE ATUAÇÃO"],
+      "topico_gramatical": ["TÓPICO GRAMATICAL"],
+      "descritores": [
+        "Descritores SAEB - 9º ano",
+        "Descritor",
+        "Código SAEB"
+      ],
+      "entrega_projeto": [
+        "Entrega de projeto",
+        "entrega de projeto",
+        "Projeto Integrador",
+        "Produto Final"
+      ],
+      "avaliacao": [
+        "Avaliação",
+        "Instrumentos de Avaliação",
+        "Critérios de Avaliação"
+      ],
+      "metodologia": [
+        "Metodologia",
+        "Estratégias"
+      ],
+      "recursos": [
+        "Recursos",
+        "Ferramenta",
+        "Plataforma",
+        "Aplicativo"
+      ],
+      "observacoes": [
+        "Observações",
+        "Observação",
+        "Seleção para DAVED",
+        "Seleção para EFAPE",
+        "Comentários adicionais DAVED/EFAPE"
+      ],
+      "generos_producoes": [
+        "GÊNEROS DAS PRODUÇÕES BIMESTRAIS"
+      ]
+    },
+
+    "disciplinas": {
+      "Arte": {
+        "match": ["Arte", "Artes"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO ", "TÍTULO"],
+          "conteudo": ["CONTEÚDO", "CONTEÚDO "],
+          "objetivos": ["OBJETIVO DE APRENDIZAGEM", "OBJETIVOS"]
+        },
+        "notes": "muitos campos com espaço no fim; aplicar trim()."
+      },
+      "Ciências": {
+        "match": ["Ciências", "Ciencias"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO ", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Educação Financeira": {
+        "match": ["Educação Financeira", "Educacao Financeira"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE", "ANO"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "objeto": ["OBJETO DE CONHECIMENTO"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "habilidade": ["HABILIDADE"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Educação Física": {
+        "match": ["Educação Física", "Educacao Fisica", "Ed. Física"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["TEMA", "UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO", "OBJETO DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO ", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "pode haver linhas com objeto/tema nulos; aceitar."
+      },
+      "Geografia": {
+        "match": ["Geografia", "Geo"],
+        "fields": {
+          "ciclo": ["CICLO", "CICLO "],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE", "BIMESTRE "],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO ", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "algumas unidades vêm com 2 descrições na mesma string; dividir por '\\n\\n'."
+      },
+      "História": {
+        "match": ["História", "Historia"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Língua Inglesa": {
+        "match": ["Língua Inglesa", "Lingua Inglesa", "Inglês", "Ingles"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Língua Portuguesa": {
+        "match": ["Língua Portuguesa", "Lingua Portuguesa", "Português", "Portugues"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "praticas_linguagem": ["PRÁTICAS DE LINGUAGEM"],
+          "campo_atuacao": ["CAMPO DE ATUAÇÃO"],
+          "objeto": ["OBJETO DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "topico_gramatical": ["TÓPICO GRAMATICAL"]
+        }
+      },
+      "Redação e Leitura": {
+        "match": [
+          "Redação e Leitura",
+          "Leitura e Produção Textual",
+          "Língua Portuguesa (Redação)"
+        ],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "semana": ["SEMANA"],
+          "aula": ["AULA"],
+          "titulo": ["TÍTULO PLANO DE AULA SEMANAL"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "praticas_linguagem": ["PRÁTICA DE LINGUAGEM"],
+          "habilidade": ["HABILIDADES BNCC"],
+          "objetivos": ["OBJETIVOS"],
+          "generos_producoes": ["GÊNEROS DAS PRODUÇÕES BIMESTRAIS"]
+        }
+      },
+      "Projeto de Convivência": {
+        "match": ["Projeto de Convivência", "Convivência"],
+        "fields": {
+          "ciclo": ["Ciclo"],
+          "ano_serie": ["Ano/Série"],
+          "bimestre": ["Bimestre"],
+          "aula": ["Aula"],
+          "objeto": ["Objetos de Conhecimento"],
+          "titulo": ["Título"],
+          "conteudo": ["Conteúdos"],
+          "objetivos": ["Objetivos"]
+        }
+      },
+      "Projeto de Vida": {
+        "match": ["Projeto de Vida"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETO DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "observacoes": [
+            "Seleção para DAVED",
+            "Seleção para EFAPE",
+            "Comentários adicionais DAVED/EFAPE"
+          ]
+        }
+      },
+      "Robótica / PEI": {
+        "match": ["Robótica", "Robótica - PEI 9h", "Tecnologia e Inovação PEI 9h"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "semana": ["SEMANA"],
+          "aula": ["Aulas", "AULA", "Aula","AULAS", "aulas", "aula"],
+          "objeto": ["OBJETO DE CONHECIMENTO"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "habilidade": [
+          "Habilidade - BNCC Computação",
+          "Habilidades - Diretrizes Curriculares Tecnologia e Inovação",
+          "Habilidades - BNCC",
+          "Habilidades BNCC"
+        ],
+
+          "descritores": ["Descritores SAEB - 9º ano"],
+          "entrega_projeto": [
+            "Entrega de projeto",
+            "Projeto Integrador",
+            "Produto Final"
+          ]
+        }
+      },
+      "Tecnologia e Inovação": {
+        "match": [
+          "Tecnologia e Inovação PEI 7h",
+          "Tecnologia e Inovação PEI 7h e",
+          "Tecnologia_e_Inovação_PEI_7h",
+          "Tecnologia_e_Inovação_PEI_7h_e_",
+          "Tecnologia e Inovação (PEI)",
+          "Tecnologia e Inovação Tempo Integral"
+        ],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "semana": ["Semana"],
+          "data": ["Data"],
+          "unidade": ["Unidade"],
+          "aula": ["Aula Unidade", "Aula Sala"],
+          "titulo": ["Título"],
+          "objetivos": ["Objetivo", "Objetivos"],
+          "conteudo": ["Conteúdos"],
+          "habilidade": [
+            "Habilidade - BNCC Computação",
+            "Habilidades - Diretrizes Curriculares Tecnologia e Inovação",
+            "Habilidades BNCC"
+          ],
+          "descritores": ["Descritores SAEB - 9º ano"],
+          "entrega_projeto": ["Entrega de projeto"],
+          "recursos": ["Ferramenta", "Plataforma", "Aplicativo"]
+        }
+      },
+      "Tecnologia e Inovação PEI 7h": {
+        "match": [
+          "Tecnologia e Inovação PEI 7h",
+          "Tecnologia_e_Inovação_PEI_7h",
+          "Tecnologia e Inovação (PEI)",
+          "Tecnologia e Inovação Tempo Integral"
+        ],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["Bimestre", "BIMESTRE"],
+          "semana": ["Semana"],
+          "data": ["Data"],
+          "unidade": ["Unidade"],
+          "aula": ["Aula Unidade", "Aula Sala"],
+          "titulo": ["Título"],
+          "objetivos": ["Objetivo", "Objetivos"],
+          "conteudo": ["Conteúdos"],
+          "habilidade": [
+            "Habilidade - BNCC Computação",
+            "Habilidades - Diretrizes Curriculares Tecnologia e Inovação",
+            "Habilidades - BNCC"
+          ],
+          "descritores": ["Descritores SAEB - 9º ano"],
+          "entrega_projeto": [
+            "Entrega de projeto",
+            "entrega de projeto"
+          ],
+          "recursos": ["Ferramenta", "Plataforma", "Aplicativo"]
+        },
+        "notes": "pode vir com Semana ou Aula vazios; tratar como opcionais."
+      },
+      "Matemática": {
+        "match": ["Matemática", "Matematica"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETO DE CONHECIMENTO", "OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE", "Habilidades BNCC - Matemática"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO", "Conteúdos"],
+          "objetivos": ["OBJETIVOS", "OBJETIVO"],
+          "descritores": ["Descritores SAEB - 9º ano"],
+          "metodologia": ["Estratégias"],
+          "avaliacao": ["Avaliação"],
+          "recursos": ["Recursos"]
+        }
+      }
+    },
+    "rules": {
+      "normalize_accents": true,
+      "trim_keys": true,
+      "trim_values": true,
+      "accept_null_fields": true,
+      "aliases_with_spaces": true,
+      "split_multiline": {
+        "fields": ["habilidade", "objetivos", "conteudo", "objeto", "tema"],
+        "separators": ["\\n", "\\r\\n"]
+      },
+      "numeric_fields": ["aula", "semana"]
+    }
+  },
+
+
+
+  "medio": {
+    "version": "2025-10-30",
+    "etapa": "medio",
+    "description": "Mapa unificado de campos para os JSONs do Ensino Médio enviados pelo Rogério (Arte, Arte e Mídias Digitais, Biologia, Biotecnologia, Ciências legado, Educação Física, Educação Financeira, Empreendedorismo, Filosofia, Filosofia e Sociedade Moderna, Física, Geografia, Geopolítica, História, Liderança, Língua Inglesa, Língua Portuguesa, Matemática, Metodologias Convergentes, Oratória, Programação, Projeto de Convivência e Projeto de Vida).",
+    "global": {
+      "ciclo": ["CICLO", "Ensino Médio", "EM"],
+      "ano_serie": ["ANO/SÉRIE", "Ano/Série", "SÉRIE", "Série"],
+      "bimestre": ["BIMESTRE", "Bimestre", "BIMESTRE "],
+      "aula": ["AULA", "Aulas"],
+      "semana": ["SEMANA", "Semana"],
+      "data": ["Data", "Período"],
+      "tema": [
+        "UNIDADE TEMÁTICA",
+        "Unidade Temática",
+        "Unidade",
+        "UNIDADE TEMÁTICA E ANÁLISE LINGUÍSTICA",
+        "Introdução às mídias digitais e ao podcast",
+        "Elementos da linguagem do podcast",
+        "Mídias Digitais",
+        "Eixo"
+      ],
+      "objeto": [
+        "OBJETOS DO CONHECIMENTO",
+        "OBJETOS DE CONHECIMENTO",
+        "OBJETO DE CONHECIMENTO",
+        "Objeto do Conhecimento"
+      ],
+      "habilidade": [
+        "HABILIDADE",
+        "Habilidades",
+        "HABILIDADES",
+        "HABILIDADES BNCC",
+        "HABILIDADE(S) BNCC"
+      ],
+      "titulo": [
+        "TÍTULO",
+        "TÍTULO ",
+        "TÍTULO DA AULA",
+        "TÍTULO  DA AULA",
+        "Título",
+        "Título da Aula"
+      ],
+      "conteudo": [
+        "CONTEÚDO",
+        "CONTEÚDO ",
+        "CONTEÚDO  ",
+        "Conteúdo",
+        "Conteúdos"
+      ],
+      "objetivos": [
+        "OBJETIVOS",
+        "Objetivos",
+        "OBJETIVOS DA AULA",
+        "OBJETIVO(S) DE APRENDIZAGEM"
+      ],
+      "campo_atuacao": ["CAMPO DE ATUAÇÃO", "Campo de atuação"],
+      "topico_gramatical": ["TÓPICO GRAMATICAL", "TÓPICOS GRAMATICAIS"],
+      "observacoes": [
+        "Seleção para DAVED",
+        "Seleção para EFAPE",
+        "Comentários adicionais DAVED/EFAPE"
+      ]
+    },
+    "disciplinas": {
+      "Arte": {
+        "match": ["Arte"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO  DA AULA", "TÍTULO DA AULA", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Arte e Mídias Digitais": {
+        "match": ["Arte e Mídias Digitais", "Arte e Midias Digitais", "Mídias Digitais"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": [
+            "UNIDADE TEMÁTICA",
+            "Introdução às mídias digitais e ao podcast",
+            "Elementos da linguagem do podcast",
+            "Mídias Digitais",
+            "Podcasts e videocasts: semelhanças e diferenças"
+          ],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA", "TÍTULO  DA AULA"],
+          "conteudo": ["CONTEÚDO", "CONTEÚDO "],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Biologia": {
+        "match": ["Biologia"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "observacoes": [
+            "Seleção para DAVED",
+            "Seleção para EFAPE"
+          ]
+        }
+      },
+      "Biotecnologia": {
+        "match": ["Biotecnologia"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "observacoes": [
+            "Seleção para DAVED",
+            "Seleção para EFAPE",
+            "Comentários adicionais DAVED/EFAPE"
+          ]
+        }
+      },
+      "Ciências (legado)": {
+        "match": ["Ciências", "Ciencias"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO ", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "Arquivo de anos finais incluído aqui por compatibilidade."
+      },
+      "Educação Física": {
+        "match": ["Educação Física", "Educacao Fisica"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Educação Financeira (Médio)": {
+        "match": ["Educação Financeira", "Educacao Financeira", "Educação Financeira (EM)"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Empreendedorismo": {
+        "match": ["Empreendedorismo"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "observacoes": [
+            "Seleção para DAVED",
+            "Seleção para EFAPE"
+          ]
+        }
+      },
+      "Filosofia": {
+        "match": ["Filosofia"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO ", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Filosofia e Sociedade Moderna": {
+        "match": ["Filosofia e Sociedade Moderna", "Filosofia (3ª série)"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Física": {
+        "match": ["Física", "Fisica"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Geografia": {
+        "match": ["Geografia"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Geopolítica": {
+        "match": ["Geopolítica", "Geopolitica"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "História": {
+        "match": ["História", "Historia"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Liderança": {
+        "match": ["Liderança", "Lideranca"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO", "TÍTULO "],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"],
+          "observacoes": [
+            "Seleção para DAVED",
+            "Seleção para EFAPE"
+          ]
+        }
+      },
+      "Língua Inglesa": {
+        "match": ["Língua Inglesa", "Lingua Inglesa", "Inglês", "Ingles"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": ["OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        }
+      },
+      "Língua Portuguesa": {
+        "match": ["Língua Portuguesa", "Lingua Portuguesa", "Português", "Portugues"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE", "Ano/Série", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA", "AULAS"],
+          "tema": [
+            "UNIDADE TEMÁTICA",
+            "UNIDADE TEMÁTICA.",
+            "UNIDADE TEMÁTICA E ANÁLISE LINGUÍSTICA"
+          ],
+          "campo_atuacao": ["CAMPO DE ATUAÇÃO", "Campo de atuação"],
+          "habilidade": ["HABILIDADE", "HABILIDADES"],
+          "objeto": ["OBJETO DE CONHECIMENTO", "OBJETOS DE CONHECIMENTO"],
+          "titulo": ["TÍTULO DA AULA", "TÍTULO"],
+          "conteudo": ["CONTEÚDO", "CONTEÚDOS"],
+          "objetivos": ["OBJETIVOS", "OBJETIVOS DA AULA"],
+          "topico_gramatical": ["TÓPICO GRAMATICAL", "TÓPICOS GRAMATICAIS"]
+        }
+      },
+      "Matemática": {
+        "match": ["Matemática", "Matematica"],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "Ano/Série", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA", "Aulas"],
+          "tema": ["UNIDADE TEMÁTICA", "Unidade Temática", "Eixo", "Unidade"],
+          "objeto": [
+            "OBJETO DO CONHECIMENTO",
+            "OBJETOS DO CONHECIMENTO",
+            "OBJETO DE CONHECIMENTO"
+          ],
+          "habilidade": [
+            "HABILIDADE",
+            "Habilidades",
+            "HABILIDADE(S) BNCC"
+          ],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO", "Conteúdo"],
+          "objetivos": [
+            "OBJETIVOS",
+            "OBJETIVOS DA AULA",
+            "OBJETIVO(S) DE APRENDIZAGEM"
+          ]
+        }
+      },
+      "Metodologias Convergentes": {
+        "match": [
+          "Metodologias Convergentes",
+          "Metodologias",
+          "Metodologias_conver"
+        ],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Unidade Temática", "Eixo"],
+          "objeto": ["OBJETO DO CONHECIMENTO", "OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO", "Conteúdos"],
+          "objetivos": [
+            "OBJETIVOS",
+            "OBJETIVOS DA AULA",
+            "OBJETIVO(S) DE APRENDIZAGEM"
+          ],
+          "observacoes": ["Comentários adicionais DAVED/EFAPE"]
+        }
+      },
+      "Oratória": {
+        "match": ["Oratória", "Oratoria"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Eixo Temático"],
+          "objeto": ["OBJETOS DO CONHECIMENTO", "OBJETO DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS", "OBJETIVOS DA AULA"]
+        }
+      },
+      "Programação": {
+        "match": ["Programação", "Programacao"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Unidade"],
+          "objeto": ["OBJETO DO CONHECIMENTO", "OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO", "Conteúdo"],
+          "objetivos": ["OBJETIVOS", "OBJETIVOS DA AULA"]
+        }
+      },
+      "Projeto de Convivência": {
+        "match": ["Projeto de Convivência", "Projeto_de_Convivencia"],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Eixo"],
+          "objeto": ["OBJETOS DO CONHECIMENTO", "OBJETO DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS", "OBJETIVOS DA AULA"],
+          "observacoes": ["Comentários adicionais DAVED/EFAPE"]
+        }
+      },
+      "Projeto de Vida": {
+        "match": ["Projeto de Vida", "Projeto_de_Vida"],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Unidade Temática"],
+          "objeto": ["OBJETOS DO CONHECIMENTO", "OBJETO DE CONHECIMENTO"],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO DA AULA", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS", "OBJETIVOS DA AULA"],
+          "observacoes": ["Comentários adicionais DAVED/EFAPE"]
+        }
+      },
+
+      "Química": {
+        "match": ["Química", "Quimica"],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": [
+            "OBJETO DE CONHECIMENTO",
+            "OBJETOS DO CONHECIMENTO"
+          ],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "Aborda conceitos fundamentais de química geral, soluções e transformações químicas, alinhadas às habilidades BNCC EM13CNT."
+      },
+      "Química Aplicada": {
+        "match": ["Química Aplicada", "Quimica Aplicada"],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": [
+            "OBJETO DE CONHECIMENTO",
+            "OBJETOS DO CONHECIMENTO"
+          ],
+          "habilidade": [
+            "HABILIDADE",
+            "Habilidades",
+            "HABILIDADES"
+          ],
+          "titulo": ["TÍTULO DA AULA", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "Integra conhecimentos químicos a aplicações tecnológicas e industriais. Foca em metodologias científicas, sustentabilidade e práticas de laboratório."
+      },
+      "Redação e Leitura": {
+        "match": ["Redação e Leitura", "Redacao e Leitura"],
+        "fields": {
+          "ciclo": ["CICLO"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Eixo Temático"],
+          "objeto": ["OBJETO DE CONHECIMENTO", "OBJETOS DO CONHECIMENTO"],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO DA AULA", "TÍTULO"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS", "OBJETIVOS DA AULA"]
+        },
+        "notes": "Trabalha gêneros textuais, argumentação, leitura crítica e produção escrita. Integra-se com Língua Portuguesa e BNCC EM13LPxx."
+      },
+      "Robótica - PEI 9h": {
+        "match": ["Robótica - PEI 9h", "Robotica PEI", "Robótica", "Robotica"],
+        "fields": {
+          "ciclo": ["CICLO", "EM", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "semana": ["SEMANA"],
+          "aula": ["AULAS", "AULA"],
+          "tema": ["UNIDADE TEMÁTICA", "Unidade", "Eixo"],
+          "objeto": [
+            "OBJETO DE CONHECIMENTO",
+            "OBJETOS DO CONHECIMENTO"
+          ],
+          "habilidade": [
+            "HABILIDADES - BNCC COMPUTAÇÃO",
+            "HABILIDADES - DIRETRIZES CURRICULARES - TECNOLOGIA E INOVAÇÃO"
+          ],
+          "titulo": ["TÍTULO", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "Disciplina transversal voltada ao pensamento computacional, automação e integração de sensores/atuadores (micro:bit, Arduino, CLP). Vincula-se às habilidades EM13COxx e EM13TECxx."
+      },
+            "Sociologia": {
+        "match": ["Sociologia"],
+        "fields": {
+          "ciclo": ["CICLO", "Ensino Médio"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "aula": ["AULA"],
+          "tema": ["UNIDADE TEMÁTICA"],
+          "objeto": [
+            "OBJETO DE CONHECIMENTO",
+            "OBJETOS DO CONHECIMENTO"
+          ],
+          "habilidade": ["HABILIDADE", "Habilidades"],
+          "titulo": ["TÍTULO", "TÍTULO ", "TÍTULO DA AULA"],
+          "conteudo": ["CONTEÚDO"],
+          "objetivos": ["OBJETIVOS"]
+        },
+        "notes": "Explora fundamentos das Ciências Sociais, processos de socialização, cultura, identidade e cidadania. Habilidade central: EM13CHS101 e correlatas."
+      },
+      "Tecnologia e Inovação": {
+        "match": [
+          "Tecnologia e Inovação",
+          "Tecnologia e Inovacao",
+          "Tec e Inovação",
+          "T.I."
+        ],
+        "fields": {
+          "ciclo": ["Ciclo", "CICLO", "EFAF"],
+          "ano_serie": ["ANO/SÉRIE", "SÉRIE"],
+          "bimestre": ["BIMESTRE"],
+          "semana": ["SEMANA"],
+          "data": ["DATA"],
+          "unidade": ["UNIDADE", "Unidade", "Unidade Temática"],
+          "aula": ["AULA", "AULA UNIDADE", "AULA SALA"],
+          "titulo": ["TÍTULO", "Título", "TÍTULO DA AULA"],
+          "objetivo": ["OBJETIVO", "Objetivo"],
+          "conteudo": ["CONTEÚDOS", "Conteúdos", "CONTEÚDO"],
+          "entrega": ["ENTREGA DE PROJETO"],
+          "habilidade_bncc_computacao": [
+            "HABILIDADE - BNCC COMPUTAÇÃO"
+          ],
+          "habilidade_diretrizes_tec": [
+            "HABILIDADES - DIRETRIZES CURRICULARES TECNOLOGIA E INOVAÇÃO"
+          ],
+          "habilidade_bncc": [
+            "HABILIDADES - BNCC",
+            "HABILIDADE BNCC"
+          ],
+          "descritores_saeb": ["DESCRITORES SAEB - 9º ANO"]
+        },
+        "notes": "Estrutura híbrida integrando Computação, Tecnologias Digitais e Diretrizes Curriculares. Campos fixos incluem ciclo EFAF, bimestre, semana e entrega de projeto. Mantém padronização com BNCC (EF03CO06, EF06CO02, EF67TECxx etc.) e SAEB."
+      },
+      "Tecnologia e Inovação (PEI 7h e +)": {
+        "match": [
+          "Tecnologia e Inovação PEI",
+          "Tecnologia e Inovação PEI 7h",
+          "Tecnologia e Inovação PEI 7h e",
+          "Tecnologia e Inovação 7h",
+          "Tecnologia_e_Inovação_PEI_7h",
+          "Tecnologia_e_Inovação_PEI_7h_e_",
+          "Tec e Inovação PEI",
+          "Tecnologia e Inovacao PEI",
+          "T.I. PEI"
+        ],
+        "dataset_path": "fundamental_II/Tecnologia_e_Inovação_PEI_7h_e_.json",
+        "fields": {
+          "ciclo": ["Ciclo", "EFAF", "CICLO"],
+          "ano_serie": ["ANO/SÉRIE", "Ano", "Série"],
+          "bimestre": ["Bimestre", "BIMESTRE"],
+          "semana": ["Semana"],
+          "data": ["Data"],
+          "unidade": ["Unidade", "Unidade Temática"],
+          "aula": ["Aula Unidade", "Aula Sala"],
+          "titulo": ["Título", "TÍTULO DA AULA"],
+          "objetivos": ["Objetivo", "OBJETIVO", "Objetivos"],
+          "conteudo": ["Conteúdos", "CONTEÚDOS"],
+          "entrega": ["Entrega de projeto", "entrega de projeto"],
+          "habilidade_bncc_computacao": ["Habilidade - BNCC Computação"],
+          "habilidade_diretrizes_tec": [
+            "Habilidades - Diretrizes Curriculares Tecnologia e Inovação"
+          ],
+          "habilidade_bncc": ["Habilidades - BNCC"],
+          "descritores_saeb": ["Descritores SAEB - 9º ano"],
+          "recursos": ["Ferramenta", "Plataforma", "Aplicativo"]
+        },
+        "notes": "Versão PEI com 7 horas semanais, alinhada com o currículo de Tecnologia e Inovação. Mapeia todas as variações conhecidas dos arquivos PEI (incluindo versões com '_e_' no nome). Campos como Semana, Aula e Unidade podem vir vazios em algumas linhas e devem ser tratados como opcionais."
+      }
+    },
+    "rules": {
+      "normalize_accents": true,
+      "trim_keys": true,
+      "trim_values": true,
+      "accept_null_fields": true,
+      "aliases_with_spaces": true,
+      "split_multiline": {
+        "fields": [
+          "habilidade",
+          "objetivos",
+          "conteudo",
+          "objeto",
+          "tema"
+        ],
+        "separators": ["\\n", "\\r\\n"]
+      }
+    }
+  }
+}
+
+
+

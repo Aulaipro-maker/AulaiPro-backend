@@ -1,0 +1,16 @@
+[
+  { "etapa": "fundamental_II", "disciplina": "Arte",                          "arquivo": "fundamental_II/Arte.json" },
+  { "etapa": "fundamental_II", "disciplina": "Ciências",                      "arquivo": "fundamental_II/Ciências.json" },
+  { "etapa": "fundamental_II", "disciplina": "Educação Financeira",           "arquivo": "fundamental_II/Educação_Financeira.json" },
+  { "etapa": "fundamental_II", "disciplina": "Educação Física",               "arquivo": "fundamental_II/Educação_Física.json" },
+  { "etapa": "fundamental_II", "disciplina": "Geografia",                     "arquivo": "fundamental_II/Geografia.json" },
+  { "etapa": "fundamental_II", "disciplina": "História",                      "arquivo": "fundamental_II/História.json" },
+  { "etapa": "fundamental_II", "disciplina": "Língua Inglesa",                "arquivo": "fundamental_II/Língua_Inglesa.json" },
+  { "etapa": "fundamental_II", "disciplina": "Língua Portuguesa",             "arquivo": "fundamental_II/Língua_Portuguesa.json" },
+  { "etapa": "fundamental_II", "disciplina": "Matemática",                    "arquivo": "fundamental_II/Matemática.json" },
+  { "etapa": "fundamental_II", "disciplina": "Projeto de Vida",               "arquivo": "fundamental_II/Projeto_de_Vida.json" },
+  { "etapa": "fundamental_II", "disciplina": "Redação e Leitura",             "arquivo": "fundamental_II/Redação_e_Leitura.json" },
+  { "etapa": "fundamental_II", "disciplina": "Robótica - PEI 9h",             "arquivo": "fundamental_II/Robótica_-_PEI_9h.json" },
+  { "etapa": "fundamental_II", "disciplina": "Tecnologia e Inovação",         "arquivo": "fundamental_II/Tecnologia_e_Inovação.json" },
+  { "etapa": "fundamental_II", "disciplina": "Tecnologia e Inovação PEI 7h e", "arquivo": "fundamental_II/Tecnologia_e_Inovação_PEI_7h_e.json" }
+]

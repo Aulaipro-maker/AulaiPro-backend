@@ -1,0 +1,102 @@
+[
+  {
+    "Disciplina": "Arte",
+    "Exemplos de Tecnologias/Plataformas": "Canva (criação de designs, infográficos, apresentações), Google Arts & Culture (acervo de obras de arte e museus), Genially (criação de materiais interativos)."
+  },
+  {
+    "Disciplina": "Arte e Mídias Digitais",
+    "Exemplos de Tecnologias/Plataformas": "Adobe Creative Cloud (Photoshop, Illustrator), ferramentas de edição de vídeo (CapCut, DaVinci Resolve), aplicativos de animação, Audacity (edição de áudio)."
+  },
+  {
+    "Disciplina": "Biologia",
+    "Exemplos de Tecnologias/Plataformas": "BioInteractive, Khan Academy (módulos sobre genética, ecologia), Educacross, aplicativos de realidade aumentada para anatomia."
+  },
+  {
+    "Disciplina": "Biotecnologia",
+    "Exemplos de Tecnologias/Plataformas": "Plataformas com simulações de laboratório virtual, artigos e bases de dados científicos online, Google Acadêmico (para pesquisa e estudo de casos)."
+  },
+  {
+    "Disciplina": "Educação Física",
+    "Exemplos de Tecnologias/Plataformas": "Aplicativos de monitoramento de atividades físicas, vídeos com tutoriais de exercícios, realidade virtual para simulação de ambientes esportivos."
+  },
+  {
+    "Disciplina": "Educação Financeira",
+    "Exemplos de Tecnologias/Plataformas": "Simuladores de investimento online, planilhas eletrônicas (Excel, Google Sheets), vídeos e canais sobre finanças pessoais e economia."
+  },
+  {
+    "Disciplina": "Empreendedorismo",
+    "Exemplos de Tecnologias/Plataformas": "Plataformas de cursos online como Sebrae e Google Ateliê Digital, ferramentas de planejamento de negócios (Trello, Asana), e programas de aceleração virtual."
+  },
+  {
+    "Disciplina": "Filosofia",
+    "Exemplos de Tecnologias/Plataformas": "Padlet e Google Jamboard (para debates e organização de ideias), blogs e wikis para criação de conteúdo e pesquisa."
+  },
+  {
+    "Disciplina": "Filosofia e Sociedade Moderna",
+    "Exemplos de Tecnologias/Plataformas": "Plataformas colaborativas (Miro, Padlet) para discutir temas sociais, YouTube para documentários e análises críticas, Google Acadêmico para artigos."
+  },
+  {
+    "Disciplina": "Física",
+    "Exemplos de Tecnologias/Plataformas": "PhET Interactive Simulations (simulações interativas de fenômenos físicos), WolframAlpha (motor de busca para cálculos), Khan Academy."
+  },
+  {
+    "Disciplina": "Geografia",
+    "Exemplos de Tecnologias/Plataformas": "Google Earth (exploração de mapas e imagens de satélite), aplicativos de realidade aumentada, softwares de SIG (Sistema de Informação Geográfica)."
+  },
+  {
+    "Disciplina": "Geopolítica",
+    "Exemplos de Tecnologias/Plataformas": "Mapas interativos online, bases de dados governamentais e de ONGs (Banco Mundial, ONU) para análise de indicadores, Google News e agregadores de notícias."
+  },
+  {
+    "Disciplina": "História",
+    "Exemplos de Tecnologias/Plataformas": "Timetoast (criação de linhas do tempo interativas), acervos digitais de museus e bibliotecas (Arquivo Nacional, Google Arts & Culture)."
+  },
+  {
+    "Disciplina": "Liderança",
+    "Exemplos de Tecnologias/Plataformas": "Ferramentas de comunicação (Slack, Microsoft Teams), plataformas de gestão de projetos (Trello), cursos online sobre soft skills."
+  },
+  {
+    "Disciplina": "Língua Inglesa",
+    "Exemplos de Tecnologias/Plataformas": "Duolingo, Quizlet, Memrise, Tandem, Grammarly, Edpuzzle."
+  },
+  {
+    "Disciplina": "Língua Portuguesa",
+    "Exemplos de Tecnologias/Plataformas": "Letrus (tecnologia com IA para leitura e escrita), Corrija-me, Grammarly, plataformas de texto colaborativo (Google Docs)."
+  },
+  {
+    "Disciplina": "Matemática",
+    "Exemplos de Tecnologias/Plataformas": "Geogebra, Excel, Matific, Khan Academy, plataformas de gamificação como o Kahoot! e Quizziz."
+  },
+  {
+    "Disciplina": "Oratória",
+    "Exemplos de Tecnologias/Plataformas": "Gravadores de áudio e vídeo para autoavaliação, plataformas de videoconferência para prática de apresentações (Zoom), ferramentas de mapas mentais para estruturar discursos."
+  },
+  {
+    "Disciplina": "Programação",
+    "Exemplos de Tecnologias/Plataformas": "Scratch, Code.org, Codecademy, kits e plataformas de robótica educativa como Arduino."
+  },
+  {
+    "Disciplina": "Projeto de Vida",
+    "Exemplos de Tecnologias/Plataformas": "Planilhas e aplicativos de organização de metas, como Google Keep ou Notion, plataformas de pesquisa de carreiras e universidades."
+  },
+  {
+    "Disciplina": "Química",
+    "Exemplos de Tecnologias/Plataformas": "ChemSketch (desenho de estruturas químicas), aplicativos da Tabela Periódica, PhET Interactive Simulations, YouTube para experimentos."
+  },
+  {
+    "Disciplina": "Química Aplicada",
+    "Exemplos de Tecnologias/Plataformas": "Softwares de simulação molecular, bancos de dados de substâncias, artigos científicos, plataformas de laboratório virtual."
+  },
+  {
+    "Disciplina": "Redação e Leitura",
+    "Exemplos de Tecnologias/Plataformas": "Letrus, Corrija-me, Grammarly, Kindle, Google Docs, plataformas com acervos digitais de livros e textos."
+  },
+  {
+    "Disciplina": "Robótica - PEI 9h",
+    "Exemplos de Tecnologias/Plataformas": "Kits de robótica com Arduino, LEGO Mindstorms EV3, softwares de programação como Scratch, Code.org."
+  },
+  {
+    "Disciplina": "Sociologia",
+    "Exemplos de Tecnologias/Plataformas": "Padlet e Miro para organizar debates e pesquisas, YouTube para documentários e análise de fenômenos sociais, plataformas de pesquisa de dados estatísticos."
+  }
+]

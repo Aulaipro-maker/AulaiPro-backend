@@ -1,0 +1,12 @@
+[
+  { "etapa": "tecnico_3ano", "disciplina": "ADM",   "arquivo": "tecnico/tecnico_3ano/ADM.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "AGRO",  "arquivo": "tecnico/tecnico_3ano/AGRO.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "DADOS", "arquivo": "tecnico/tecnico_3ano/DADOS.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "ENF",   "arquivo": "tecnico/tecnico_3ano/ENF.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "FARM",  "arquivo": "tecnico/tecnico_3ano/FARM.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "HOTEL", "arquivo": "tecnico/tecnico_3ano/HOTEL.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "LOG",   "arquivo": "tecnico/tecnico_3ano/LOG.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "PMD",   "arquivo": "tecnico/tecnico_3ano/PMD.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "SIS",   "arquivo": "tecnico/tecnico_3ano/SIS.json" },
+  { "etapa": "tecnico_3ano", "disciplina": "VEND",  "arquivo": "tecnico/tecnico_3ano/VEND.json" }
+]

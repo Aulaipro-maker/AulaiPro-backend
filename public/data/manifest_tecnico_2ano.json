@@ -1,0 +1,12 @@
+[
+  { "etapa": "tecnico_2ano", "disciplina": "ADM",   "arquivo": "tecnico/tecnico_2ano/ADM.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "AGRO",  "arquivo": "tecnico/tecnico_2ano/AGRO.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "CCM",   "arquivo": "tecnico/tecnico_2ano/CCM.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "DADOS", "arquivo": "tecnico/tecnico_2ano/DADOS.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "ENF",   "arquivo": "tecnico/tecnico_2ano/ENF.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "FARM",  "arquivo": "tecnico/tecnico_2ano/FARM.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "HOTEL", "arquivo": "tecnico/tecnico_2ano/HOTEL.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "LOG",   "arquivo": "tecnico/tecnico_2ano/LOG.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "SIS",   "arquivo": "tecnico/tecnico_2ano/SIS.json" },
+  { "etapa": "tecnico_2ano", "disciplina": "VEND",  "arquivo": "tecnico/tecnico_2ano/VEND.json" }
+]

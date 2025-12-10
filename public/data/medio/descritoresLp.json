@@ -1,0 +1,344 @@
+[
+  {
+    "Tema": "Aprendizagem baseada em projetos aplicada à Educação Financeira",
+    "Código": "D1",
+    "Descritor": "–Localizar informações explícitas em um texto.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "Aprendizagem baseada em projetos aplicada à Educação Financeira",
+    "Código": "D3",
+    "Descritor": "–Inferir o sentido de uma palavra ou expressão.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "Aprendizagem baseada em projetos aplicada à Educação Financeira",
+    "Código": "D4",
+    "Descritor": "–Inferir uma informação implícita em um texto.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "Aprendizagem baseada em projetos aplicada à Educação Financeira",
+    "Código": "D6",
+    "Descritor": "–Identificar o tema de um texto",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "Aprendizagem baseada em projetos aplicada à Educação Financeira",
+    "Código": "D11",
+    "Descritor": "–Distinguir um fato da opinião relativa a esse fato.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D5",
+    "Descritor": "–Interpretar texto com auxílio de material gráfico diverso (propagandas, quadrinhos, foto etc.).",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D9",
+    "Descritor": "Identificar a finalidade de textos de diferentes gêneros",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "III. Relação entre Textos",
+    "Código": "D15",
+    "Descritor": "Reconhecer diferentes formas de tratar uma informação na comparação de textos que tratam do mesmo tema, em função das condições em que ele foi produzido e daquelas em que será recebido.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D2",
+    "Descritor": "–Estabelecer relações entre partes de um texto, identificando repetições ou substituições que contribuem para a continuidade de um texto.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D7",
+    "Descritor": "–Identificar o conflito gerador do enredo e os elementos que constroem a narrativa.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D8",
+    "Descritor": "–Estabelecer relação causa/consequência entre partes e elementos do texto.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D12",
+    "Descritor": "–Estabelecer relações lógico-discursivas presentes no texto, marcadas por conjunções, advérbios etc.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D13",
+    "Descritor": "–Identificar efeitos de ironia ou humor em textos variados.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D14",
+    "Descritor": "–Identificar o efeito de sentido decorrente do uso da pontuação e de outras notações.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "VI. Variação Linguística",
+    "Código": "D10",
+    "Descritor": "–Identificar as marcas linguísticas que evidenciam o locutor e o interlocutor de um texto.",
+    "Série": "5° ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D1",
+    "Descritor": "–Localizar informações explícitas em um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D3",
+    "Descritor": "–Inferir o sentido de uma palavra ou expressão.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D4",
+    "Descritor": "–Inferir uma informação implícita em um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D6",
+    "Descritor": "–Identificar o tema de um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D14",
+    "Descritor": "–Distinguir um fato da opinião relativa a esse fato.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D5",
+    "Descritor": "–Interpretar texto com auxílio de material gráfico diverso (propagandas, quadrinhos, foto etc.).",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D12",
+    "Descritor": "–Identificar a finalidade de textos de diferentes gêneros",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "III. Relação entre Textos",
+    "Código": "D20",
+    "Descritor": "Reconhecer diferentes formas de tratar uma informação na comparação de textos que tratam do mesmo tema, em função das condições em que ele foi produzido e daquelas em que será recebido.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "III. Relação entre Textos",
+    "Código": "D21",
+    "Descritor": "–Reconhecer posições distintas entre duas ou mais opiniões relativas ao mesmo fato ou ao mesmo tema.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D2",
+    "Descritor": "–Estabelecer relações entre partes de um texto, identificando repetições ou substituições que contribuem para a continuidade de um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D7",
+    "Descritor": "–Identificar a tese de um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D8",
+    "Descritor": "–Estabelecer relação entre a tese e os argumentos oferecidos para sustentá-la.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D9",
+    "Descritor": "–Diferenciar as partes principais das secundárias em um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D10",
+    "Descritor": "–Identificar o conflito gerador do enredo e os elementos que constroem a narrativa.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D11",
+    "Descritor": "–Estabelecer relação causa/consequência entre partes e elementos do texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D15",
+    "Descritor": "–Estabelecer relações lógico-discursivas presentes no texto, marcadas por conjunções, advérbios etc.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D16",
+    "Descritor": "–Identificar efeitos de ironia ou humor em textos variados.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D17",
+    "Descritor": "–Reconhecer o efeito de sentido decorrente do uso da pontuação e de outras notações.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D18",
+    "Descritor": "–Reconhecer o efeito de sentido decorrente da escolha de uma determinada palavra ou expressão.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D19",
+    "Descritor": "–Reconhecer o efeito de sentido decorrente da exploração de recursos ortográficos e/ou morfossintáticos.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "VI. Variação Linguística",
+    "Código": "D13",
+    "Descritor": "–Identificar as marcas linguísticas que evidenciam o locutor e o interlocutor de um texto.",
+    "Série": "9°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D1",
+    "Descritor": "–Localizar informações explícitas em um texto",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D3",
+    "Descritor": "–Inferir o sentido de uma palavra ou expressão.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D4",
+    "Descritor": "–Inferir uma informação implícita em um texto.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D6",
+    "Descritor": "–Identificar o tema de um texto",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "I. Procedimentos de Leitura",
+    "Código": "D14",
+    "Descritor": "– Distinguir um fato da opinião relativa a esse fato",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D5",
+    "Descritor": "–Interpretar texto com auxílio de material gráfico diverso (propagandas, quadrinhos, foto etc.).",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D12",
+    "Descritor": "– Identificar a finalidade de textos de diferentes gêneros.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D20",
+    "Descritor": "Reconhecer diferentes formas de tratar uma informação na comparação de textos que tratam do mesmo tema, em função das condições em que ele foi produzido e daquelas em que será recebido.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "II. Implicações do Suporte, do Gênero e/ou do Enunciador na Compreensão do Texto",
+    "Código": "D21",
+    "Descritor": "–Reconhecer posições distintas entre duas ou mais opiniões relativas ao mesmo fato ou ao mesmo tema.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D2",
+    "Descritor": "–Estabelecer relações entre partes de um texto, identificando repetições ou substituições que contribuem para a continuidade de um texto.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D7",
+    "Descritor": "–Identificar a tese de um texto.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D8",
+    "Descritor": "–Estabelecer relação entre a tese",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D9",
+    "Descritor": "–Diferenciar as partes principais das secundárias em um texto.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D10",
+    "Descritor": "–Identificar o conflito gerador do enredo e os elementos que constroem a narrativa.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D11",
+    "Descritor": "–Estabelecer relação causa/consequência entre partes e elementos do texto.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "IV. Coerência e Coesão no Processamento do Texto",
+    "Código": "D15",
+    "Descritor": "–Estabelecer relações lógico-discursivas presentes no texto, marcadas por conjunções, advérbios etc.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D16",
+    "Descritor": "–Identificar efeitos de ironia ou humor em textos variados.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D17",
+    "Descritor": "–Reconhecer o efeito de sentido decorrente do uso da pontuação e de outras notações.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D18",
+    "Descritor": "–Reconhecer o efeito de sentido decorrente da escolha de uma determinada palavra ou expressão.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "V. Relações entre Recursos Expressivos e Efeitos de Sentido",
+    "Código": "D19",
+    "Descritor": "–Reconhecer o efeito de sentido decorrente da exploração de recursos ortográficos e/ou morfossintáticos.",
+    "Série": "3°ano"
+  },
+  {
+    "Tema": "VI. Variação Linguística",
+    "Código": "D13",
+    "Descritor": "– Identificar as marcas linguísticas que evidenciam o locutor e o interlocutor de um texto.",
+    "Série": "3°ano"
+  }
+]
