@@ -302,12 +302,10 @@ APP_VERSION = "2025.08"
 # ---------------------------------------------------------------------
 # Caminhos (AJUSTE ESTE para seu projeto local)
 # ---------------------------------------------------------------------
-DATA_DIR = Path(
-    r"C:\Users\RogerMReis\Documents\Projeto_PlanoIA\lesson.ia - Turbo - Copia\public\data"
-).resolve()
-
 APP_ROOT = Path(__file__).resolve().parent
+DATA_DIR = APP_ROOT / "public" / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
+
 
 # Reconhece códigos BNCC/RA (uso geral)
 CODIGO_RE = re.compile(r'\b[A-Z]{2,}\d{2,}[A-Z]?\d*\b', re.I)
