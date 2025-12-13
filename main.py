@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-LessonAI API – FastAPI
+AulaiPro API – FastAPI
 Estrutura esperada:
 ...
 """
@@ -296,8 +296,9 @@ def load_rows_for(etapa: str, disciplina: str) -> list[dict]:
     raise HTTPException(status_code=404, detail=f"dataset não mapeado para {e}/{d}")
 
 
-APP_NAME    = "LessonAI API"
-APP_VERSION = "2025.08"
+APP_NAME = "AulaiPro API"
+APP_VERSION = "0.1.0"
+
 
 # ---------------------------------------------------------------------
 # Caminhos (AJUSTE ESTE para seu projeto local)
@@ -320,7 +321,12 @@ MANIFEST_FILES = [
 # ---------------------------------------------------------------------
 # App + CORS
 # ---------------------------------------------------------------------
-app = FastAPI(title=APP_NAME, version=APP_VERSION)
+app = FastAPI(
+    title="AulaiPro API",
+    version="0.1.0",
+    description="API do AulaiPro (geração de planos de aula e exportações).",
+)
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -1061,6 +1067,16 @@ def options_cors(path: str):
 @app.get("/api/ping")
 def ping():
     return {"ok": True} 
+
+@app.get("/")
+def root():
+    return {
+        "status": "online",
+        "service": "AulaiPro Backend",
+        "docs": "/docs",
+        "ping": "/api/ping",
+    }
+
 # ---------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------
