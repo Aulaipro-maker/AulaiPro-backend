@@ -749,11 +749,105 @@ def _uniq_clean_list(vals: Iterable[str]) -> List[str]:
     return out
 
 
+def get_fields_ci_all(row: Dict[str, Any], keys: List[str]) -> List[Any]:
+    """
+    Versão "multi" do get_field_ci: tenta localizar TODOS os campos possíveis
+    (pelos aliases) e retorna uma lista de valores encontrados (sem duplicar colunas).
+    Mantém prioridade: exato > casefold > normalizado > contém, POR CHAVE.
+    """
+    if not row or not keys:
+        return []
 
-def row_temas(row: dict, field_map: dict, etapa: Optional[str], disciplina: Optional[str]) -> List[str]:
+    # Normalizador de cabeçalho compatível com get_field_ci
+    def _norm_hdr(s: str) -> str:
+        s2 = strip_accents(str(s or ""))
+        s2 = re.sub(r"[\(\)\[\]]", " ", s2)
+        s2 = re.sub(r"[^\w\s]", " ", s2)
+        s2 = re.sub(r"\s+", " ", s2).strip().casefold()
+        return s2
+
+    row_keys = list(row.keys())
+    row_casefold = {str(rk).casefold(): rk for rk in row_keys}
+    row_norm_map = {_norm_hdr(rk): rk for rk in row_keys}
+
+    found_cols: List[str] = []
+    out_vals: List[Any] = []
+
+    for want in keys:
+        want_s = str(want or "").strip()
+        if not want_s:
+            continue
+
+        # 0) exato
+        rk = want_s if want_s in row else None
+
+        # 1) casefold
+        if rk is None:
+            rk = row_casefold.get(want_s.casefold())
+
+        # 2) normalizado == 
+        if rk is None:
+            rk = row_norm_map.get(_norm_hdr(want_s))
+
+        # 3) contains parcial (como no get_field_ci)
+        if rk is None:
+            wn = _norm_hdr(want_s)
+            if wn:
+                for rnh, real_k in row_norm_map.items():
+                    if wn in rnh or rnh in wn:
+                        rk = real_k
+                        break
+
+        if rk and rk not in found_cols:
+            found_cols.append(rk)
+            out_vals.append(row.get(rk))
+
+    return out_vals
+
+
+
+def row_temas(
+    row: dict,
+    field_map: dict,
+    etapa: Optional[str],
+    disciplina: Optional[str]
+) -> List[str]:
+    """
+    Extrai os 'temas' de uma linha respeitando a semântica da disciplina.
+
+    - Língua Portuguesa:
+        agrega TODOS os eixos possíveis (Unidade Temática, Práticas de Linguagem,
+        Campo de Atuação etc.), pois o conceito de "tema" é multidimensional.
+    - Demais disciplinas:
+        mantém comportamento tradicional (primeiro campo que casar).
+    """
+
     keys = aliases_for(field_map, etapa, disciplina, "tema")
-    val  = get_field_ci(row, keys)  # pega 1º campo que existir
-    return _uniq_clean_list(split_multiline(val))
+
+    # Normaliza disciplina para decisão semântica
+    disc_norm = norm_key_ci(disciplina or "")
+    is_lp = disc_norm in {
+        "lingua portuguesa",
+        "língua portuguesa",
+        "portugues",
+        "português",
+    }
+
+    all_items: List[str] = []
+
+    if is_lp:
+        # 🔹 LP → agrega múltiplos campos (correção do bug)
+        vals = get_fields_ci_all(row, keys)
+        for v in vals:
+            all_items.extend(split_multiline(v))
+    else:
+        # 🔹 Outras disciplinas → comportamento clássico
+        val = get_field_ci(row, keys)
+        all_items.extend(split_multiline(val))
+
+    return _uniq_clean_list(all_items)
+
+
 
 
 def row_objetos(row: dict, field_map: dict, etapa: Optional[str], disciplina: Optional[str]) -> List[str]:
