@@ -1443,13 +1443,20 @@ def debug_disciplinas(etapa: str = Query(..., description="ex.: medio, fundament
 # Rotas – Navegação por etapa/arquivo
 # ---------------------------------------------------------------------
 @app.get("/api/disciplinas")
-def get_disciplinas(etapa: str = Query(..., description="ex.: medio")):
-    man = _load_manifest()
-    # lista bruta da sua fonte
-    raw = [m.get("disciplina", "") for m in man if m.get("etapa") == etapa and m.get("disciplina")]
+def get_disciplinas(etapa: str = Query(..., description="ex.: fundamental_I, fundamental_II, medio")):
+    # 🔹 NORMALIZA A ETAPA VINDO DO FRONTEND
+    etapa_norm = normalize_etapa(etapa) or etapa
 
-    # dedupe por chave normalizada e preferir sem underline
-    seen = {}  # key normalizada -> rótulo “bonito” (com espaços)
+    man = _load_manifest()
+
+    # 🔹 USA etapa_norm NA COMPARAÇÃO COM O MANIFEST
+    raw = [
+        m.get("disciplina", "")
+        for m in man
+        if m.get("etapa") == etapa_norm and m.get("disciplina")
+    ]
+
+    seen = {}
     for nome in raw:
         key = _norm_key(nome)
         if IGNORE_PAT.match(key):
@@ -1459,8 +1466,16 @@ def get_disciplinas(etapa: str = Query(..., description="ex.: medio")):
         if cur is None or ("_" in cur and "_" not in nome):
             seen[key] = label
 
-    disciplinas = sorted(seen.values(), key=lambda x: unicodedata.normalize("NFKD", x).casefold())
-    return {"disciplinas": disciplinas}
+    disciplinas = sorted(
+        seen.values(),
+        key=lambda x: unicodedata.normalize("NFKD", x).casefold()
+    )
+
+    return {
+        "disciplinas": disciplinas,
+        "etapa_norm": etapa_norm  # útil para debug (pode remover depois)
+    }
+
 
 @app.get("/api/arquivo-da-disciplina")
 def get_arquivo_da_disciplina(
