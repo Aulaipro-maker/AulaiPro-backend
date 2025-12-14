@@ -806,46 +806,18 @@ def get_fields_ci_all(row: Dict[str, Any], keys: List[str]) -> List[Any]:
 
 
 
-def row_temas(
-    row: dict,
-    field_map: dict,
-    etapa: Optional[str],
-    disciplina: Optional[str]
-) -> List[str]:
-    """
-    Extrai os 'temas' de uma linha respeitando a semântica da disciplina.
-
-    - Língua Portuguesa:
-        agrega TODOS os eixos possíveis (Unidade Temática, Práticas de Linguagem,
-        Campo de Atuação etc.), pois o conceito de "tema" é multidimensional.
-    - Demais disciplinas:
-        mantém comportamento tradicional (primeiro campo que casar).
-    """
-
+def row_temas(row: dict, field_map: dict, etapa: Optional[str], disciplina: Optional[str]) -> List[str]:
     keys = aliases_for(field_map, etapa, disciplina, "tema")
 
-    # Normaliza disciplina para decisão semântica
-    disc_norm = norm_key_ci(disciplina or "")
-    is_lp = disc_norm in {
-        "lingua portuguesa",
-        "língua portuguesa",
-        "portugues",
-        "português",
-    }
+    # ✅ pega TODOS os campos relevantes
+    vals = get_fields_ci_all(row, keys)
 
     all_items: List[str] = []
-
-    if is_lp:
-        # 🔹 LP → agrega múltiplos campos (correção do bug)
-        vals = get_fields_ci_all(row, keys)
-        for v in vals:
-            all_items.extend(split_multiline(v))
-    else:
-        # 🔹 Outras disciplinas → comportamento clássico
-        val = get_field_ci(row, keys)
-        all_items.extend(split_multiline(val))
+    for v in vals:
+        all_items.extend(split_multiline(v))
 
     return _uniq_clean_list(all_items)
+
 
 
 
